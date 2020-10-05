@@ -1,9 +1,16 @@
 import React from 'react'; 
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'antd/dist/antd.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Calendar from './components/calendar/Calendar';
+import ReduxWrap from './redux/ReduxWrap';
+
 function App() {
   return (
-   <h1>hola</h1>
+
+    <ReduxWrap>
+         <Calendar/>
+    </ReduxWrap>
   );
 }
 
